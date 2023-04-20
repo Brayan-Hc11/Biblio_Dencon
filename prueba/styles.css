@@ -5,85 +5,113 @@
 }
 
 body {
+    font-family: 'PT Sans', sans-serif;
     height: 100vh;
     background-color: #a9aaac;
     color: #fff;
     max-width: 1500px;
 }
 
-header {
-    position: relative;
+.headercate{
+    
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+
+    /*position: relative;
     width: 106%;
     min-width: 900px;
     padding: 20px 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #24252a;
+    background-color: #24252a;*/
 }
 
-.logo-BlackLabel {
-    margin-left: 50px;
-}
-
-.cont-ul {
-    right: 0;
+.navcat {
+    position: fixed;
+    width: 100%;
+    background-color: #000;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin-right: 50px;
-    position: absolute;
+    justify-content: space-between;
+    padding: 25px;
+    transition: all 0.5s ease;
 }
 
-li {
+.navcat.active {
+    background-color: #fff;
+    padding: 15px;
+}
+
+.navcat.active .logocat,
+.navcat.active a {
+    color: #000;
+}
+
+.navcat.active .logocatt,
+.navcat.active a:hover {
+    background: #000;
+    color: #fff;
+}
+
+.logocat {
+    font-size: 25px;
+    color: #fff;
+}
+
+.menucat {
+    display: flex;
+}
+
+.menucat li {
     list-style: none;
-    cursor: pointer;
-    padding: 20px;
-    transition: all 0.3s ease 0s;
+    margin: 15px;
 }
 
-li:hover {
-    background-color: #008849;
+.menucat li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+
+.menucat li a:hover {
+    padding: 5px 10px;
+    background: #fff;
+    color: #000;
+    border-radius: 15px;
+}
+
+.scrol {
+    height: 100px;
 }
 
 .ul-second {
-     position: absolute;
-     display: none;
-     transform: translateY(20px);
+    position: absolute;
+    display: none;
+    transform: translateY(15px);
 }
 
 .ul-second >li {
     border-bottom: 1px solid #fff;
     text-align: center;
-    background-color: #24252a;
-    padding: 20px;
-    width: 190px;
-    transform: translateX(-20px);
+    padding: 10px;
+    width: 130px;
+    transform: translateX(-38px);
     padding: 20px;
 }
 
 .ul-second >li:hover {
-    background-color: #008849;
+    background-color: #000;
 }
 
-.develop:hover >.ul-second {
+.categorias:hover > .ul-second {
     display: block;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.5s ease
 }
 
-.ul-third { 
-    position: absolute;
-    right: 0;
-    top: 40%;
-    transform: translateX(121px);
-    display: none;
-    background-color: #24252a;
-}
-
-.ul-third >li {
-    padding: 20px;
-    border-bottom: 1px solid #fff;
-}
-
-.front:hover > .ul-third {
-    display: block;
-}
