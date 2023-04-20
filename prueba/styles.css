@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #a9aaac;
+    color: #fff;
+    max-width: 1500px;
+}
+
+header {
+    position: relative;
+    width: 106%;
+    min-width: 900px;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #24252a;
+}
+
+.logo-BlackLabel {
+    margin-left: 50px;
+}
+
+.cont-ul {
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 50px;
+    position: absolute;
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+    padding: 20px;
+    transition: all 0.3s ease 0s;
+}
+
+li:hover {
+    background-color: #008849;
+}
+
+.ul-second {
+     position: absolute;
+     display: none;
+     transform: translateY(20px);
+}
+
+.ul-second >li {
+    border-bottom: 1px solid #fff;
+    text-align: center;
+    background-color: #24252a;
+    padding: 20px;
+    width: 190px;
+    transform: translateX(-20px);
+    padding: 20px;
+}
+
+.ul-second >li:hover {
+    background-color: #008849;
+}
+
+.develop:hover >.ul-second {
+    display: block;
+}
+
+.ul-third { 
+    position: absolute;
+    right: 0;
+    top: 40%;
+    transform: translateX(121px);
+    display: none;
+    background-color: #24252a;
+}
+
+.ul-third >li {
+    padding: 20px;
+    border-bottom: 1px solid #fff;
+}
+
+.front:hover > .ul-third {
+    display: block;
+}
